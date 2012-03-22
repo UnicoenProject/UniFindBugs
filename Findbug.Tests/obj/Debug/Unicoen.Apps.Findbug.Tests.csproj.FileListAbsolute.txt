@@ -1,0 +1,1 @@
+C:\Users\GreatAS\Desktop\UniFindBugs\Findbug.Tests\obj\Debug\ResolveAssemblyReference.cache

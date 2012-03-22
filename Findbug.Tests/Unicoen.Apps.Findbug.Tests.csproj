@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9E438B50-8B2C-4A8B-A5AD-B57AF8BB911C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Unicoen.Apps.Findbug.Tests</RootNamespace>
+    <AssemblyName>Unicoen.Apps.Findbug.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory.CSharp">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\ICSharpCode.NRefactory.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory.VB">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\ICSharpCode.NRefactory.VB.dll</HintPath>
+    </Reference>
+    <Reference Include="IronRuby">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\IronRuby.dll</HintPath>
+    </Reference>
+    <Reference Include="IronRuby.Libraries">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\IronRuby.Libraries.dll</HintPath>
+    </Reference>
+    <Reference Include="IronRuby.Libraries.Yaml">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\IronRuby.Libraries.Yaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamic">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.0.12054\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Paraiba">
+      <HintPath>..\packages\Paraiba.1.0.1.19\lib\net40\Paraiba.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unicoen.Core">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Unicoen.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unicoen.Languages.C">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Unicoen.Languages.C.dll</HintPath>
+    </Reference>
+    <Reference Include="Unicoen.Languages.CSharp">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Unicoen.Languages.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Unicoen.Languages.Java">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Unicoen.Languages.Java.dll</HintPath>
+    </Reference>
+    <Reference Include="Unicoen.Languages.JavaScript">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Unicoen.Languages.JavaScript.dll</HintPath>
+    </Reference>
+    <Reference Include="Unicoen.Languages.Python2">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Unicoen.Languages.Python2.dll</HintPath>
+    </Reference>
+    <Reference Include="Unicoen.Languages.Python3">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Unicoen.Languages.Python3.dll</HintPath>
+    </Reference>
+    <Reference Include="Unicoen.Languages.Ruby18">
+      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Unicoen.Languages.Ruby18.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DefUseAnalyzerTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Findbug\Unicoen.Apps.Findbug.csproj">
+      <Project>{14EE515B-4FEE-4D82-A9B1-B87ED023F333}</Project>
+      <Name>Unicoen.Apps.Findbug</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
