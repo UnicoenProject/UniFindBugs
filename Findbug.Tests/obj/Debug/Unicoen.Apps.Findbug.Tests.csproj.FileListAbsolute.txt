@@ -1,1 +1,5 @@
 C:\Users\GreatAS\Desktop\UniFindBugs\Findbug.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\GreatAS\Desktop\bin\Debug\Unicoen.Apps.Findbug.Tests.dll
+C:\Users\GreatAS\Desktop\bin\Debug\Unicoen.Apps.Findbug.Tests.pdb
+C:\Users\GreatAS\Desktop\UniFindBugs\Findbug.Tests\obj\Debug\Unicoen.Apps.Findbug.Tests.dll
+C:\Users\GreatAS\Desktop\UniFindBugs\Findbug.Tests\obj\Debug\Unicoen.Apps.Findbug.Tests.pdb

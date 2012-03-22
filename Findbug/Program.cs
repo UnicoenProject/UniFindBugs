@@ -20,7 +20,7 @@ using System;
 using System.Collections.Generic;
 using Unicoen.Languages.Java.ProgramGenerators;
 using Unicoen.Model;
-using Unicoen.Tests;
+using Unicoen.TestUtils;
 
 namespace Unicoen.Apps.Findbug {
     internal class Program {
