@@ -3,3 +3,8 @@ C:\Users\GreatAS\Desktop\UniFindBugs\bin\Debug\Unicoen.Apps.Findbug.exe
 C:\Users\GreatAS\Desktop\UniFindBugs\bin\Debug\Unicoen.Apps.Findbug.pdb
 C:\Users\GreatAS\Desktop\UniFindBugs\Findbug\obj\x86\Debug\Unicoen.Apps.Findbug.exe
 C:\Users\GreatAS\Desktop\UniFindBugs\Findbug\obj\x86\Debug\Unicoen.Apps.Findbug.pdb
+C:\Users\GreatAS\Desktop\temp\UniFindBugs\Findbug\obj\x86\Debug\Unicoen.Apps.Findbug.exe
+C:\Users\GreatAS\Desktop\temp\UniFindBugs\Findbug\obj\x86\Debug\Unicoen.Apps.Findbug.pdb
+C:\Users\GreatAS\Desktop\temp\UniFindBugs\Findbug\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\GreatAS\Desktop\temp\UniFindBugs\bin\Debug\Unicoen.Apps.Findbug.exe
+C:\Users\GreatAS\Desktop\temp\UniFindBugs\bin\Debug\Unicoen.Apps.Findbug.pdb

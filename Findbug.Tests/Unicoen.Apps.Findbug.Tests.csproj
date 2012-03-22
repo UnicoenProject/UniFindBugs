@@ -19,7 +19,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <OutputPath>..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -27,47 +27,80 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\bin\Release\</OutputPath>
+    <OutputPath>..\bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Antlr3.Runtime">
-      <HintPath>..\packages\Code2Xml.1.1.1.28\lib\Antlr3.Runtime.dll</HintPath>
+      <HintPath>..\packages\Code2Xml.1.3.3.72\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Code2Xml.Core">
-      <HintPath>..\packages\Code2Xml.1.1.1.28\lib\Code2Xml.Core.dll</HintPath>
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Code2Xml.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Code2Xml.Languages.C">
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Code2Xml.Languages.C.dll</HintPath>
+    </Reference>
+    <Reference Include="Code2Xml.Languages.CSharp">
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Code2Xml.Languages.CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Code2Xml.Languages.Java">
-      <HintPath>..\packages\Code2Xml.1.1.1.28\lib\Code2Xml.Languages.Java.dll</HintPath>
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Code2Xml.Languages.Java.dll</HintPath>
+    </Reference>
+    <Reference Include="Code2Xml.Languages.JavaScript">
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Code2Xml.Languages.JavaScript.dll</HintPath>
+    </Reference>
+    <Reference Include="Code2Xml.Languages.Lua">
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Code2Xml.Languages.Lua.dll</HintPath>
+    </Reference>
+    <Reference Include="Code2Xml.Languages.Python2">
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Code2Xml.Languages.Python2.dll</HintPath>
+    </Reference>
+    <Reference Include="Code2Xml.Languages.Python3">
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Code2Xml.Languages.Python3.dll</HintPath>
+    </Reference>
+    <Reference Include="Code2Xml.Languages.Ruby18">
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Code2Xml.Languages.Ruby18.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\ICSharpCode.NRefactory.dll</HintPath>
+      <HintPath>..\packages\ICSharpCode.NRefactory.5.0.0.5\lib\Net40\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory.CSharp">
-      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\ICSharpCode.NRefactory.CSharp.dll</HintPath>
+      <HintPath>..\packages\ICSharpCode.NRefactory.5.0.0.5\lib\Net40\ICSharpCode.NRefactory.CSharp.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory.VB">
       <HintPath>..\packages\UNICOEN.1.0.3.28\lib\ICSharpCode.NRefactory.VB.dll</HintPath>
     </Reference>
+    <Reference Include="ICSharpCode.NRefactory.Xml">
+      <HintPath>..\packages\ICSharpCode.NRefactory.5.0.0.5\lib\Net40\ICSharpCode.NRefactory.Xml.dll</HintPath>
+    </Reference>
     <Reference Include="IronRuby">
-      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\IronRuby.dll</HintPath>
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\IronRuby.dll</HintPath>
     </Reference>
     <Reference Include="IronRuby.Libraries">
-      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\IronRuby.Libraries.dll</HintPath>
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\IronRuby.Libraries.dll</HintPath>
     </Reference>
     <Reference Include="IronRuby.Libraries.Yaml">
-      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\IronRuby.Libraries.Yaml.dll</HintPath>
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\IronRuby.Libraries.Yaml.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Dynamic">
-      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Microsoft.Dynamic.dll</HintPath>
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Microsoft.Dynamic.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Scripting">
-      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Microsoft.Scripting.dll</HintPath>
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Microsoft.Scripting.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil">
-      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Mono.Cecil.dll</HintPath>
+      <HintPath>..\packages\Mono.Cecil.0.9.5.2\lib\net40\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>..\packages\Mono.Cecil.0.9.5.2\lib\net40\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>..\packages\Mono.Cecil.0.9.5.2\lib\net40\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>..\packages\Mono.Cecil.0.9.5.2\lib\net40\Mono.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.0.12054\lib\nunit.framework.dll</HintPath>
@@ -80,28 +113,28 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="Unicoen.Core">
-      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Unicoen.Core.dll</HintPath>
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Unicoen.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unicoen.Languages.C">
-      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Unicoen.Languages.C.dll</HintPath>
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Unicoen.Languages.C.dll</HintPath>
     </Reference>
     <Reference Include="Unicoen.Languages.CSharp">
-      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Unicoen.Languages.CSharp.dll</HintPath>
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Unicoen.Languages.CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Unicoen.Languages.Java">
-      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Unicoen.Languages.Java.dll</HintPath>
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Unicoen.Languages.Java.dll</HintPath>
     </Reference>
     <Reference Include="Unicoen.Languages.JavaScript">
-      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Unicoen.Languages.JavaScript.dll</HintPath>
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Unicoen.Languages.JavaScript.dll</HintPath>
     </Reference>
     <Reference Include="Unicoen.Languages.Python2">
-      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Unicoen.Languages.Python2.dll</HintPath>
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Unicoen.Languages.Python2.dll</HintPath>
     </Reference>
     <Reference Include="Unicoen.Languages.Python3">
-      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Unicoen.Languages.Python3.dll</HintPath>
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Unicoen.Languages.Python3.dll</HintPath>
     </Reference>
     <Reference Include="Unicoen.Languages.Ruby18">
-      <HintPath>..\packages\UNICOEN.1.0.3.28\lib\Unicoen.Languages.Ruby18.dll</HintPath>
+      <HintPath>..\packages\UNICOEN.1.0.4.56\lib\Unicoen.Languages.Ruby18.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
